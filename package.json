@@ -1,0 +1,22 @@
+{
+  "name": "football-cli",
+  "version": "0.1.0",
+  "description": "This is a small command line application showing football results",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "football",
+    "euros"
+  ],
+  "author": "Simon Schraeder <info@simon-schraeder.de> (http://simon-schraeder.de)",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table2": "^0.2.0",
+    "node-football-data": "^0.1.2"
+  },
+  "bin": {
+      "football-cli": "index.js"
+  }
+}
