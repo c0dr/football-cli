@@ -22,7 +22,7 @@ fd.getLeagugeFixturesInTimeFrame(424, "n1").then(function(res) {
 
   fixtures.forEach(function(fixture) {
     const fixtureDate = new Date(fixture.date);
-    table.push([fixture.homeTeamName, fixture.goalsHomeTeam || fixture.result.goalsHomeTeam || 0, fixture.goalsAwayTeam || fixture.result.goalsAwayTeam|| 0, fixture.awayTeamName, fixtureDate.toLocaleTimeString()]);
+    table.push([fixture.homeTeamName, fixture.result.goalsHomeTeam || 0, fixture.result.goalsAwayTeam|| 0, fixture.awayTeamName, fixtureDate.toLocaleTimeString()]);
   })
 
   console.log(table.toString());
